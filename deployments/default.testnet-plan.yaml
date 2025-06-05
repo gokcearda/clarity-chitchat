@@ -1,0 +1,18 @@
+---
+id: 0
+name: Testnet deployment
+network: testnet
+stacks-node: "https://stacks-node-api.testnet.stacks.co"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoind.testnet.stacks.co:18332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: chitchat
+            expected-sender: ST3BQ7HZV647XXB2P3QWN83SR74C7FQ0HSYB0R5BM
+            cost: 2006
+            path: contracts/chitchat.clar
+            anchor-block-only: true
+            clarity-version: 2
+      epoch: "2.4"
