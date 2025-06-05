@@ -10,7 +10,7 @@ plan:
       transactions:
         - contract-publish:
             contract-name: chitchat
-            expected-sender: ST3BQ7HZV647XXB2P3QWN83SR74C7FQ0HSYB0R5BM
+            expected-sender: STVPCAS2MR19SM9VPF3BP19JEJ1VYYRDYNPMTRPK
             cost: 2006
             path: contracts/chitchat.clar
             anchor-block-only: true
