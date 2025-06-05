@@ -3,6 +3,9 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useStacks } from '../contexts/StacksContext';
 
+// Contract configuration
+const CONTRACT_ADDRESS = 'ST2DWQM3JNQ70MEMZ7YVW3XTEGZATZ0AZ9RR78E6J';
+
 interface Message {
   sender: string;
   content: string;

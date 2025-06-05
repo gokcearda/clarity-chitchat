@@ -56,13 +56,20 @@ ChitChat is a decentralized messaging application built on the Stacks blockchain
    npm install
    ```
 
-3. Configure environment variables:
+3. Configure environment variables and settings:
    ```bash
-   # In frontend directory
-   cp .env.example .env.local
+   # Copy example settings files
+   cp settings/Testnet.example.toml settings/Testnet.toml
+   cp settings/Devnet.example.toml settings/Devnet.toml
+   cp settings/Simnet.example.toml settings/Simnet.toml
    ```
 
-4. Start the development server:
+4. Update the settings files with your mnemonic:
+   ⚠️ **IMPORTANT: Never commit your mnemonic or private keys to Git!** ⚠️
+   - Edit `settings/Testnet.toml` and replace `YOUR_MNEMONIC_HERE` with your actual mnemonic
+   - These files are git-ignored for security
+
+5. Start the development server:
    ```bash
    # In frontend directory
    npm run dev

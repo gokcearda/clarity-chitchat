@@ -9,6 +9,6 @@ bitcoin_node_rpc_pass = "devnet"
 use_docker_gateway_as_host = false
 
 [accounts.deployer]
-mnemonic = "wink document leader devote author belt such doll suffer inch vocal radio vicious social rent history ivory upgrade skirt purpose square identify place salute"
+mnemonic = "YOUR_MNEMONIC_HERE"
 balance = 100_000_000_000
 is_mainnet = false

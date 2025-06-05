@@ -5,6 +5,10 @@ import { useStacks } from '../contexts/StacksContext';
 import { openContractCall } from '@stacks/connect';
 import { stringUtf8CV, uintCV, someCV, noneCV } from '@stacks/transactions';
 
+// Contract configuration
+const CONTRACT_ADDRESS = 'ST2DWQM3JNQ70MEMZ7YVW3XTEGZATZ0AZ9RR78E6J';
+const CONTRACT_NAME = 'chitchat';
+
 export function MessageForm() {
   const [content, setContent] = useState('');
   const [replyTo, setReplyTo] = useState('');
@@ -23,8 +27,8 @@ export function MessageForm() {
 
       await openContractCall({
         anchorMode: 1,
-        contractAddress: 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM',
-        contractName: 'chitchat',
+        contractAddress: CONTRACT_ADDRESS,
+        contractName: CONTRACT_NAME,
         functionName: 'send-message',
         functionArgs,
         postConditionMode: 1,
