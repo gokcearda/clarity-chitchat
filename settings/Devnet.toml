@@ -1,0 +1,14 @@
+[network]
+name = "testnet"
+node_rpc_address = "https://api.testnet.hiro.so"
+stacks_node_rpc_address = "https://api.testnet.hiro.so"
+bitcoin_node_rpc_address = "http://none"
+bitcoin_node_rpc_port = 18332
+bitcoin_node_rpc_user = "devnet"
+bitcoin_node_rpc_pass = "devnet"
+use_docker_gateway_as_host = false
+
+[accounts.deployer]
+mnemonic = "wink document leader devote author belt such doll suffer inch vocal radio vicious social rent history ivory upgrade skirt purpose square identify place salute"
+balance = 100_000_000_000
+is_mainnet = false

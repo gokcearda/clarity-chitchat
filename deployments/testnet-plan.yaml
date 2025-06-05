@@ -1,0 +1,22 @@
+---
+id: 1
+name: "Testnet deployment"
+network:
+  name: "testnet"
+  node_rpc_address: "https://api.testnet.hiro.so"
+genesis:
+  wallets:
+    - name: deployer
+      address: ST2DWQM3JNQ70MEMZ7YVW3XTEGZATZ0AZ9RR78E6J
+      balance: "100000000000"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: chitchat
+            expected-sender: ST2DWQM3JNQ70MEMZ7YVW3XTEGZATZ0AZ9RR78E6J
+            cost: 100000
+            path: contracts/chitchat.clar
+            clarity-version: 2
+            epoch: 2.4
