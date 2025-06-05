@@ -1,0 +1,18 @@
+---
+id: 0
+name: Mainnet deployment
+network: mainnet
+stacks-node: "https://stacks-node-api.mainnet.stacks.co"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoin.blockstack.com:8332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: chitchat
+            expected-sender: SP38AJRSPWY9R1Q7FFM1E4FDJWYM4VZ0EA0RK7WGR
+            cost: 2006
+            path: contracts/chitchat.clar
+            anchor-block-only: true
+            clarity-version: 2
+      epoch: "2.4"
